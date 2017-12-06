@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Main_Login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            android:id="@+id/relative_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="CADASTRO"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textStyle="normal"
+                android:fontFamily="casual"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/edit_nome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:hint="  Nome"
+                />
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_nome"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint= "  Email"
+                android:textColor="@android:color/darker_gray"
+                android:background="#FFFFFF"/>
+            <EditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_email"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="  Digite a senha"
+                android:background="#FFFFFF"/>
+            <EditText
+                android:id="@+id/password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_nome"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint= "  Confirme a senha"
+                android:textColor="@android:color/darker_gray"
+                android:background="#FFFFFF"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/confirmar_botão"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Ao confirmar vc aceita nossos Termos e Serviços"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

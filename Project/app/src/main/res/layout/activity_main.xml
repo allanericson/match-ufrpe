@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.android.project.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/relative_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_nome"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="60dp"
+                android:background="#FFFFFF"
+                android:hint="  Email ou Nome de Usuário"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edit_email"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#FFFFFF"
+                android:hint="  Digite a senha"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/check_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Lembrar Usuário"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/check_permanecer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Permanecer Logado"
+                android:textColor="#FFFFFF" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/confirm_entrar"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="submitEntrar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/entrar" />
+
+                <ImageView
+                    android:id="@+id/confirm_cadastrar"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:onClick="submitCadastrar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cadastrar" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:text="Ao confirmar vc aceita nossos Termos e Serviços"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
+
